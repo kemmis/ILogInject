@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ILogInject.Unity</id>
+    <version>0.0.0.0</version>
+    <title>ILogInject.Unity</title>
+    <authors>github.com/trondr</authors>
+    <owners>github.com/trondr</owners>
+    <licenseUrl>https://github.com/trondr/ILogInject/blob/master/License.md</licenseUrl>
+    <projectUrl>https://github.com/trondr/ILogInject/blob/master/README.md</projectUrl>
+    <iconUrl>https://github.com/trondr/ILogInject/blob/master/src/ILogInject.Graphics/ILogInject.ico?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ILogInject.Unity</description>
+    <copyright>ILogInject.Unity</copyright>
+    <tags>ilog unity ioc inject class logger logging</tags>
+    <references>
+      <reference file="ILogInject.Unity.dll" />
+    </references>
+	<language>en-US</language>
+	<dependencies>
+		<dependency id="Common.Logging" version="2.0.0" />
+		<dependency id="Unity.Interception" version="2.1.505.0" />
+	</dependencies>
+  </metadata>
+  <files>
+
+    <file src="net35\ILogInject.Unity.dll" target="lib\net35" />
+    <file src="net35\ILogInject.Unity.pdb" target="lib\net35" />
+
+    <file src="net35client\ILogInject.Unity.dll" target="lib\net35-client" />
+    <file src="net35client\ILogInject.Unity.pdb" target="lib\net35-client" />
+
+    <file src="net40\ILogInject.Unity.dll" target="lib\net40" />
+    <file src="net40\ILogInject.Unity.pdb" target="lib\net40" />
+
+    <file src="net40client\ILogInject.Unity.dll" target="lib\net40-client" />
+    <file src="net40client\ILogInject.Unity.pdb" target="lib\net40-client" />
+
+    <file src="net403\ILogInject.Unity.dll" target="lib\net403" />
+    <file src="net403\ILogInject.Unity.pdb" target="lib\net403" />
+
+    <file src="net403client\ILogInject.Unity.dll" target="lib\net403-client" />
+    <file src="net403client\ILogInject.Unity.pdb" target="lib\net403-client" />
+
+    <file src="net40mono\ILogInject.Unity.dll" target="lib\net40-mono" />
+    <file src="net40mono\ILogInject.Unity.pdb" target="lib\net40-mono" />
+
+    <file src="net45\ILogInject.Unity.dll" target="lib\net45" />
+    <file src="net45\ILogInject.Unity.pdb" target="lib\net45" />
+    
+	<file src="**\*.cs" target="src" />
+	
+    <file src="Install.ps1" target="tools" />
+  </files>
+</package>

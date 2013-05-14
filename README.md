@@ -6,19 +6,29 @@ ILogInject enables an IOC container to inject a CommonLogging.ILog class logger 
 
 The ILog injection Unity extension was initially written for Log4Net by http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container
 
-## Currently Supported Containers
+## Supported IOC Containers
 
-* ILogInject.UnityCommonLogging (Microsoft Unity)
+* Microsoft Unity (ILogInject.Unity)
 
-## Supported runtimes
+## Supported .NET runtimes
 
 * .NET 3.5
+* .NET 3.5 Client
+* .NET 4.0
+* .NET 4.0 Client
+* .NET 4.0.3
+* .NET 4.0.3 Client
+* .NET 4.5
 
 ## Installation
 
-ILogInject.UnityCommonLogging will in near future be available from Nuget Package Manager
+ILogInject.Unity will in near future be available from Nuget Package Manager
 
-## Example
+## Example C# project utilizing ILogInject.Unity
+
+See https://github.com/trondr/ILogInject/tree/master/src/ILogInject.Unity.Log4NetExample
+
+## Example ILog usage
 
 ```csharp
 using System;
@@ -38,7 +48,8 @@ namespace ILogInject.ExampleLibrary
         public SomeEntity(ILog logger)
         {
             //A logger with name "ILogInject.ExampleLibrary.SomeEntity" is injected into the class when the IOC container
-			//resolves ISomeEntity -> SomeEntity that has been registered into the IOC container
+			//resolves ISomeEntity -> SomeEntity, a mapping that have on application startup been registered into the 
+			//IOC container
 			
 			_logger = logger; 
 			
@@ -64,3 +75,5 @@ namespace ILogInject.ExampleLibrary
 }
 	
 ```
+
+## Example

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE326E72-7E91-4FA0-AE0C-B42D91817A54}</ProjectGuid>
+    <ProjectTypeGuids Condition=" '$(SilverlightVersion)' == ''">{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids Condition=" '$(SilverlightVersion)' != ''">{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ILogInject.Unity</RootNamespace>
+    <AssemblyName>ILogInject.Unity</AssemblyName>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == ''">v3.5</TargetFrameworkVersion>
+    <TargetFramework Condition=" '$(TargetFramework)' == ''">NET35</TargetFramework>
+    <TargetFrameworkProfile Condition=" '$(TargetFrameworkProfile)' != ''">$(TargetFrameworkProfile)</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFrameworkIdentifier)' == ''">.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFrameworkIdentifier)' != ''">$(TargetFrameworkIdentifier)</TargetFrameworkIdentifier>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFrameworkIdentifier)' == 'SilverLight'">Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion Condition=" '$(SilverlightVersion)' != ''">$(SilverlightVersion)</SilverlightVersion>
+    <SilverlightApplication Condition=" '$(SilverlightApplication)' != ''">$(SilverlightApplication)</SilverlightApplication>
+    <ValidateXaml Condition=" '$(SilverlightVersion)' != ''">true</ValidateXaml>
+    <ThrowErrorsInValidation Condition=" '$(SilverlightVersion)' != ''">true</ThrowErrorsInValidation>
+    <FileAlignment Condition=" '$(SilverlightVersion)' == ''">512</FileAlignment>
+    <BuildOutputDirectory Condition=" '$(BuildOutputDirectory)' == ''">..\..\bld</BuildOutputDirectory>
+    <BaseIntermediateOutputPath>$(BuildOutputDirectory)\$(AssemblyName)\obj.$(TargetFramework)\</BaseIntermediateOutputPath>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(BuildOutputDirectory)\$(AssemblyName)\bin.$(TargetFramework)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(TargetFramework)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(BuildOutputDirectory)\$(AssemblyName)\bin.$(TargetFramework)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;$(TargetFramework)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ILogInject.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.1.2\lib\net35\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildTracking.cs" />
+    <Compile Include="BuildTrackingPolicy.cs" />
+    <Compile Include="BuildTrackingStrategy.cs" />
+    <Compile Include="CommonLoggingLogBuildPlanPolicy.cs" />
+    <Compile Include="CommonLoggingLogCreationExtension.cs" />
+    <Compile Include="CommonLoggingLogCreationStrategy.cs" />
+    <Compile Include="CommonLoggingTraceListener.cs" />
+    <Compile Include="IBuildTrackingPolicy.cs" />
+    <Compile Include="LogType.cs" />
+    <Compile Include="Properties\AssemblyInfo_Build.cs" />
+    <Compile Include="Properties\AssemblyInfo_Static.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Credit\0.blog.baltrinic.com Credit.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="License\0.ILogInject.UnityCommonLogging License.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="License\1.blog.baltrinic.com License.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ILogInject.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework'" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" Condition=" '$(TargetFrameworkIdentifier)' == '.NETPortable'" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" Condition=" '$(SilverlightVersion)' != ''" />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" Condition=" '$(TargetFrameworkIdentifier)' == '.NETCore'" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
