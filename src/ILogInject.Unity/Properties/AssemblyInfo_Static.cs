@@ -2,12 +2,11 @@
 // Project Name: ILogInject.Unity
 // Project Home: https://github.com/trondr/ILogInject/blob/master/README.md
 // License: New BSD License (BSD) https://github.com/trondr/ILogInject/blob/master/License.md
-// Credits: See the Credit folder in this project
+// Credits: http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container
 // Copyright © <github.com/trondr> 2013 
 // All rights reserved.
 
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
 #if NET20
 [assembly: AssemblyTitle("ILogInject.Unity for .NET Framework 2.0")]

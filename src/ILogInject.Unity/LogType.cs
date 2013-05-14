@@ -1,5 +1,5 @@
 ﻿// File: LogType.cs
-// Project Name: ILogInject.UnityCommonLogging
+// Project Name: ILogInject.Unity
 // Project Home: https://github.com/trondr/ILogInject/blob/master/README.md
 // License: New BSD License (BSD) https://github.com/trondr/ILogInject/blob/master/License.md
 // Credits: http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container

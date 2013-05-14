@@ -1,11 +1,10 @@
 ﻿// File: IConfiguration.cs
-// Project Name: NMultiTool.Console
-// Project Home: https://github.com/trondr
-// License: New BSD License (BSD) http://www.opensource.org/licenses/BSD-3-Clause
-// Credits: See the Credit folder in this project
+// Project Name: ILogInject.Unity.Log4NetExample
+// Project Home: https://github.com/trondr/ILogInject/blob/master/README.md
+// License: New BSD License (BSD) https://github.com/trondr/ILogInject/blob/master/License.md
+// Credits: http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container
 // Copyright © <github.com/trondr> 2013 
 // All rights reserved.
-
 namespace ILogInject.Unity.Log4Net
 {
     public interface IConfiguration

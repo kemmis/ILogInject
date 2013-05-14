@@ -20,8 +20,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("ILogInject.Unity")]
 [assembly: AssemblyCopyright("Copyright © <github.com/trondr> 2013")]
 [assembly: CLSCompliant(true)]
-[assembly: AssemblyInformationalVersion("1.0.13134.2f0d121")]
-[assembly: AssemblyVersion("1.0.13134.10")]
-[assembly: AssemblyFileVersion("1.0.13134.10")]
+[assembly: AssemblyInformationalVersion("1.0.13134.c52475a")]
+[assembly: AssemblyVersion("1.0.13134.13")]
+[assembly: AssemblyFileVersion("1.0.13134.13")]
 
 
