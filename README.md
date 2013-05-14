@@ -22,7 +22,7 @@ ILogInject.Unity is derived from http://blog.baltrinic.com/software-development/
 
 ## Installation
 
-ILogInject.Unity will in near future be available from Nuget Package Manager
+ILogInject.Unity is installed into your project by Nuget Package Manager
 
 ## Example C# project utilizing ILogInject.Unity
 
