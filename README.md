@@ -12,6 +12,7 @@ ILogInject.Unity is derived from http://blog.baltrinic.com/software-development/
 
 ## Supported .NET runtimes
 
+* Mono 4.0
 * .NET 3.5
 * .NET 3.5 Client
 * .NET 4.0
