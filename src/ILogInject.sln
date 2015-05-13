@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.Unity.Log4NetExample", "ILogInject.Unity.Log4NetExample\ILogInject.Unity.Log4NetExample.csproj", "{B35DA032-7B24-48B9-A265-8252A3638D62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.ExampleLibrary", "ILogInject.ExampleLibrary\ILogInject.ExampleLibrary.csproj", "{C63D88E3-ED31-421E-9543-C856E10BCFE0}"
