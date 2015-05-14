@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<CreditInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ProductName>log4net-integration-with-unity-ioc-container</ProductName>
-  <ProductHome>http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container</ProductHome>
-  <CreditText>ILogInjection.UnityLog4Net is a compilation of code from http://blog.baltrinic.com/software-development/dotnet/log4net-integration-with-unity-ioc-container.</CreditText>
-</CreditInfo>

@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.Unity.Log4NetExample", "ILogInject.Unity.Log4NetExample\ILogInject.Unity.Log4NetExample.csproj", "{B35DA032-7B24-48B9-A265-8252A3638D62}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.ExampleLibrary", "ILogInject.ExampleLibrary\ILogInject.ExampleLibrary.csproj", "{C63D88E3-ED31-421E-9543-C856E10BCFE0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.Unity", "ILogInject.Unity\ILogInject.Unity.csproj", "{AE326E72-7E91-4FA0-AE0C-B42D91817A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILogInject.Unity.Updated", "ILogInject.Unity\ILogInject.Unity.Updated.csproj", "{AE326E72-7E91-4FA0-AE0C-B42D91817A54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B35DA032-7B24-48B9-A265-8252A3638D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B35DA032-7B24-48B9-A265-8252A3638D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B35DA032-7B24-48B9-A265-8252A3638D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B35DA032-7B24-48B9-A265-8252A3638D62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C63D88E3-ED31-421E-9543-C856E10BCFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C63D88E3-ED31-421E-9543-C856E10BCFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C63D88E3-ED31-421E-9543-C856E10BCFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C63D88E3-ED31-421E-9543-C856E10BCFE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE326E72-7E91-4FA0-AE0C-B42D91817A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE326E72-7E91-4FA0-AE0C-B42D91817A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE326E72-7E91-4FA0-AE0C-B42D91817A54}.Release|Any CPU.ActiveCfg = Release|Any CPU

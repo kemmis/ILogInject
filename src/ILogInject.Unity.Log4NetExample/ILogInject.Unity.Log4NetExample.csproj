@@ -73,10 +73,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ILogInject.ExampleLibrary\ILogInject.ExampleLibrary.csproj">
-      <Project>{c63d88e3-ed31-421e-9543-c856e10bcfe0}</Project>
-      <Name>ILogInject.ExampleLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ILogInject.Unity\ILogInject.Unity.csproj">
       <Project>{ae326e72-7e91-4fa0-ae0c-b42d91817a54}</Project>
       <Name>ILogInject.Unity</Name>
